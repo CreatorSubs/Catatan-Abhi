@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Catatan Simple</h1>
+            <div class="header-icons">
+                <i class="fas fa-plus" id="addIcon"></i>
+                <i class="fas fa-search" id="searchIcon"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div id="searchBox" style="display: none;">
+            <input type="text" id="searchInput" placeholder="Cari judul catatan...">
+        </div>
+
+        <div class="notes-grid" id="notesContainer">
+            <div class="note" data-id="1">
+                <h2>Catatan Keseharian</h2>
+                <p>2 Februari 2025</p>
+            </div>
+            <div class="note" data-id="2">
+                <h2>Catatan Tugas</h2>
+                <p>3 Februari 2025</p>
+            </div>
+            <div class="note" data-id="3">
+                <h2>Catatan Random</h2>
+                <p>4 Februari 2025</p>
+            </div>
+            <div class="note" data-id="4">
+                <h2>Catatan Keuangan</h2>
+                <p>5 Februari 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Edit Catatan</h2>
+            <input type="text" id="editTitle" placeholder="Judul Catatan">
+            <textarea id="editContent" placeholder="Isi Catatan"></textarea>
+            <button id="saveButton">Simpan Perubahan</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
